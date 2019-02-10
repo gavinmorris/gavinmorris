@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Gavin Morris</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <!--GitHub calendar-->
+    <link href="css/github-calendar.css" rel="stylesheet">
+  </head>
+
+  <body style="background-color: white">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Gavin Morris</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="https://github.com/gavinmorris">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/gavinthomasmorris/">LinkedIn</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <div class="container">
+      <div class="starter-template">
+        <h1>Salut!</h1>
+        <p class="lead">I need a job.<br>Don't call before 11am.</p>
+      </div>	
+      <center><button type="button" class="darkmode" id="darkmodebtn" style="vertical-align:middle" onclick="darkmode()"><span>Dark Mode</span></button></center>
+      <br />
+      <center>
+        <h3>
+          <p><span class="normal">Pree de ting.</span><span class="extra">Pay attention to my GitHub contributions.</span></p>
+        </h3>
+      </center>
+      <br />
+
+      <!-- Prepare a container for your calendar. -->
+      <script
+        src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"
+      >
+      </script>
+
+      <!-- Prepare a container for your calendar. -->
+      <div class="calendar">
+          <!-- Loading stuff -->
+          Loading the data just for you.
+      </div>
+
+      <script>
+          new GitHubCalendar(".calendar", "gavinmorris");
+      </script>
+      <br />
+
+      <center>
+        <h2>Song of the Week.</h2>
+        <br />
+          <iframe src="https://open.spotify.com/embed/track/2cytBOLpwFRX7J9URCrFIe" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>      
+      <center>
+
+
+    </div><!-- /.container -->
+    <script type="text/javascript">
+      function darkmode(){
+        if(document.body.style.backgroundColor == "white"){
+          document.body.style.backgroundColor = "black";
+          document.body.style.color = "white";
+          document.getElementById("darkmodebtn").innerHTML = "Not Dark Mode"
+          document.getElementById("darkmodebtn").style.backgroundColor = "white"
+          document.getElementById("darkmodebtn").style.color = "black"
+
+        }else{
+          document.body.style.backgroundColor = "white";
+          document.body.style.color = "black";
+          document.getElementById("darkmodebtn").innerHTML = "Dark Mode"
+          document.getElementById("darkmodebtn").style.backgroundColor = "black"
+          document.getElementById("darkmodebtn").style.color = "white"
+
+        }
+      }
+    </script>
+    <br />
+
+  </body>
+</html>
